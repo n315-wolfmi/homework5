@@ -2,5 +2,3 @@ node_modules
 lib
 package-lock.json
 package.json
-css/fonts
-images
