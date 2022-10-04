@@ -80,6 +80,7 @@ nav .links-right .right-img-link img {
   nav {
     justify-content: space-between;
     padding: 0 30px;
+    height: 93px;
   }
   nav .links-left img {
     width: 45px;
@@ -104,6 +105,7 @@ nav .links-right .right-img-link img {
 }
 @media screen and (max-width: 390px) {
   nav {
+    height: 55px;
     justify-content: space-between;
     padding: 0 15px;
   }
@@ -407,6 +409,58 @@ footer .footer-right img {
   font-weight: bold;
 }
 
+@media screen and (max-width: 768px) {
+  .about .about-card img {
+    width: 208px;
+    height: 343px;
+    margin-left: 50px;
+  }
+  .about .about-card .about-card-right {
+    max-width: 325px;
+    text-align: center;
+    margin: 0 50px;
+  }
+  .about .about-card .about-card-right h1 {
+    font-size: 12px;
+  }
+  .about .about-card .about-card-right h3 {
+    font-size: 8px;
+    margin-top: 25px;
+  }
+  .about .about-card .about-card-right p {
+    margin-top: 33px;
+    font-size: 11px;
+    max-width: 355px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .about .about-card {
+    margin: 120px 0;
+  }
+  .about .about-card img {
+    width: 73px;
+    height: 132px;
+    margin: 0 0 0 50px;
+  }
+  .about .about-card .about-card-right {
+    max-width: 197px;
+    text-align: center;
+    margin: 0 15px;
+  }
+  .about .about-card .about-card-right h1 {
+    font-size: 6px;
+    margin: 0;
+  }
+  .about .about-card .about-card-right h3 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 6px;
+  }
+  .about .about-card .about-card-right p {
+    margin: 10px 0 0 0;
+    font-size: 6px;
+  }
+}
 .books {
   padding: 20px;
 }

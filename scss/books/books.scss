@@ -1,0 +1,46 @@
+.books {
+    padding: 20px;
+
+    .book-section {
+        margin: 180px auto;
+    
+        h1 {
+            font-size: 26px;
+            margin-left: 1%;
+            margin-bottom: 65px;
+        }
+    
+        .book-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        
+            .book {
+                display: flex;
+            
+                .bookset-img {
+                    width: 223px;
+                    height: 246px;
+                }
+
+                .book-img {
+                    width: 206px;
+                    height: 311px;
+                }
+            
+                .book-right {
+                    max-width: 280px;
+                    margin-left: 54px;
+            
+                    h3 {
+                        margin: 48px 0 68px 0;
+                    }
+            
+                    button {
+                        @include site-button();
+                    }
+                }
+            }
+        }
+    }
+}  

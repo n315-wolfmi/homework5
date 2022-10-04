@@ -41,3 +41,75 @@
         }
     }
 }
+
+@media screen and (max-width: $ipad-width) {
+    .about {
+        .about-card {
+    
+            img {
+                width: 208px;
+                height: 343px;
+                margin-left: 50px;
+            }
+    
+            .about-card-right {
+                max-width: 325px;
+                text-align: center;
+                margin: 0 50px;
+    
+                h1 {
+                    font-size: 12px;
+                }
+    
+                h3 {
+                    font-size: 8px;
+                    margin-top: 25px;
+                }
+    
+                p {
+                    margin-top: 33px;
+                    font-size: 11px;
+                    max-width: 355px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: $iphone-width) {
+    .about {
+        .about-card {
+            margin: 120px 0;
+
+            img {
+                width: 73px;
+                height: 132px;
+                margin: 0 0 0 50px;
+            }
+    
+            .about-card-right {
+                max-width: 197px;
+                text-align: center;
+                margin: 0 15px;
+
+                h1 {
+                    font-size: 6px;
+                    margin:0;
+                }
+    
+                h3 {
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                    font-size: 6px;
+                }
+    
+                p {
+                    margin: 10px 0 0 0;
+                    font-size: 6px;
+                }
+            }
+        }
+    }
+    
+}

@@ -74,6 +74,7 @@ nav {
     nav {
         justify-content: space-between;
         padding: 0 30px;
+        height: 93px;
 
         .links-left {
             img {
@@ -106,6 +107,7 @@ nav {
 //iphone media query
 @media screen and (max-width: $iphone-width) {
     nav {
+        height: 55px;
         justify-content: space-between;
         padding: 0 15px;
 
