@@ -1,6 +1,6 @@
 nav {
     height: 108px;
-    max-width: $site-width;
+    width: 100%;
     border-bottom: 1px solid #000;
     display: flex;
     align-items: center;
@@ -14,11 +14,13 @@ nav {
         justify-content: space-between;
         text-decoration: none;
         color: #000;
-        width: 201px;
+        // width: 201px;
+        margin-right: 8px;
 
         img {
             height: 73px;
             width: 73px;
+            margin-right: 8px;
         }
 
         p {
@@ -63,6 +65,81 @@ nav {
                 width: 52px;
                 height: 52px;
             }
+        }
+    }
+}
+
+//ipad media query
+@media screen and (max-width: $ipad-width)  {
+    nav {
+        justify-content: space-between;
+        padding: 0 30px;
+
+        .links-left {
+            img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        .searchbar {
+            width: 51%;
+        }
+
+        .links-right {
+            visibility: hidden;
+            width: 0px;
+        }
+
+        .hamburger {
+            background-image: url("../images/hamburger.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+    }
+}
+
+//iphone media query
+@media screen and (max-width: $iphone-width) {
+    nav {
+        justify-content: space-between;
+        padding: 0 15px;
+
+        .links-left {
+            p {
+                font-size: 13px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .searchbar {
+            width: 43%;
+            height: 16px;
+            background-size: 15px;
+            font-size: 11px;
+            padding-left: 27px;
+        }
+
+        .links-right {
+            visibility: hidden;
+            width: 0px;
+        }
+
+        .hamburger {
+            background-image: url("../images/hamburger.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 33px;
+            height: 33px;
+            cursor: pointer;
         }
     }
 }

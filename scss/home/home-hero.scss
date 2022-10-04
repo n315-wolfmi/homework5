@@ -1,9 +1,8 @@
 .home {
-    max-width: 1920px;
     height: 100%;
 
     .home-hero {
-        max-width: 1500px;
+        max-width: 78%;
         height: 530px;
         background-image: linear-gradient(rgb(88,124,131,0.7), rgb(88,124,131,0.7)), url(../images/home-hero.jpg);
         background-position: center;
@@ -12,10 +11,9 @@
         margin: 158px auto 176px auto;
 
         .home-hero-info {
-            max-width: 265px;
             position: absolute;
-            right: 350px;
-            top: 470px;
+            right: 22%;
+            top: 43%;
             color: #fff;
 
             h1 {
@@ -26,6 +24,92 @@
             
             p {
                 margin-top: 20px;
+            }
+        }
+    }
+}
+
+//ipad media query
+@media screen and (max-width: $ipad-width)  {
+    .home {
+
+        .home-hero {
+            background-image: none;
+            height: 329px;
+            width: 552px;
+            background-color: $site-blue;
+            margin: 88px auto 66px auto;
+
+            .home-hero-query {
+                background-image: linear-gradient(rgb(88,124,131,0.3), rgb(88,124,131,0.3)), url(../images/home-hero.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 49%;
+                height: 55%;
+                position: relative;
+                top: 23%;
+                left: 15%;
+            }
+
+            .home-hero-info {
+                position: static;
+                margin-top: -70px;
+                margin-left: 400px;
+                margin-left: 72%;
+
+                h1 {
+                    font-size: 12px;
+                    margin-top: -5px;
+                    margin-bottom: 0;
+                }
+                
+                p {
+                    font-size: 7px;
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+}
+
+//iphone media query
+@media screen and (max-width: $iphone-width) {
+    .home {
+
+        .home-hero {
+            background-image: none;
+            height: 193px;
+            width: 316px;
+            background-color: $site-blue;
+            margin: 88px auto 66px auto;
+
+            .home-hero-query {
+                background-image: linear-gradient(rgb(88,124,131,0.3), rgb(88,124,131,0.3)), url(../images/home-hero.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 116px;
+                height: 77;
+                position: relative;
+                top: 23%;
+                left: 15%;
+            }
+
+            .home-hero-info {
+                position: static;
+                margin-top: -60px;
+                margin-left: 64%;
+
+                h1 {
+                    font-size: 6px;
+                    margin-bottom: 5px;
+                }
+                
+                p {
+                    font-size: 6px;
+                    margin-top: 20px;
+                }
             }
         }
     }

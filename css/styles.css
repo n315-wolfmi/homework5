@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 nav {
   height: 108px;
-  max-width: 1920px;
+  width: 100%;
   border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
@@ -33,11 +33,12 @@ nav .links-left {
   justify-content: space-between;
   text-decoration: none;
   color: #000;
-  width: 201px;
+  margin-right: 8px;
 }
 nav .links-left img {
   height: 73px;
   width: 73px;
+  margin-right: 8px;
 }
 nav .links-left p {
   margin: 0;
@@ -75,14 +76,74 @@ nav .links-right .right-img-link img {
   height: 52px;
 }
 
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  nav .links-left img {
+    width: 45px;
+    height: 45px;
+  }
+  nav .searchbar {
+    width: 51%;
+  }
+  nav .links-right {
+    visibility: hidden;
+    width: 0px;
+  }
+  nav .hamburger {
+    background-image: url("../images/hamburger.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 390px) {
+  nav {
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  nav .links-left p {
+    font-size: 13px;
+  }
+  nav .links-left img {
+    width: 30px;
+    height: 30px;
+  }
+  nav .searchbar {
+    width: 43%;
+    height: 16px;
+    background-size: 15px;
+    font-size: 11px;
+    padding-left: 27px;
+  }
+  nav .links-right {
+    visibility: hidden;
+    width: 0px;
+  }
+  nav .hamburger {
+    background-image: url("../images/hamburger.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+  }
+}
 footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1920px;
+  width: 100%;
   height: 92px;
   background-color: #587C83;
   padding: 0 104px;
+  padding: 0 5%;
 }
 footer .footer-left {
   color: #fff;
@@ -108,12 +169,38 @@ footer .footer-right img {
   height: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  footer {
+    font-size: 11px;
+  }
+  footer .footer-right {
+    width: 120px;
+  }
+  footer .footer-right img {
+    width: 22px;
+    height: 22px;
+  }
+}
+@media screen and (max-width: 390px) {
+  footer {
+    font-size: 6px;
+  }
+  footer .footer-center {
+    width: 130px;
+  }
+  footer .footer-right {
+    width: 70px;
+  }
+  footer .footer-right img {
+    width: 14px;
+    height: 14px;
+  }
+}
 .home {
-  max-width: 1920px;
   height: 100%;
 }
 .home .home-hero {
-  max-width: 1500px;
+  max-width: 78%;
   height: 530px;
   background-image: linear-gradient(rgba(88, 124, 131, 0.7), rgba(88, 124, 131, 0.7)), url(../images/home-hero.jpg);
   background-position: center;
@@ -122,10 +209,9 @@ footer .footer-right img {
   margin: 158px auto 176px auto;
 }
 .home .home-hero .home-hero-info {
-  max-width: 265px;
   position: absolute;
-  right: 350px;
-  top: 470px;
+  right: 22%;
+  top: 43%;
   color: #fff;
 }
 .home .home-hero .home-hero-info h1 {
@@ -137,28 +223,98 @@ footer .footer-right img {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .home .home-hero {
+    background-image: none;
+    height: 329px;
+    width: 552px;
+    background-color: #587C83;
+    margin: 88px auto 66px auto;
+  }
+  .home .home-hero .home-hero-query {
+    background-image: linear-gradient(rgba(88, 124, 131, 0.3), rgba(88, 124, 131, 0.3)), url(../images/home-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 49%;
+    height: 55%;
+    position: relative;
+    top: 23%;
+    left: 15%;
+  }
+  .home .home-hero .home-hero-info {
+    position: static;
+    margin-top: -70px;
+    margin-left: 400px;
+    margin-left: 72%;
+  }
+  .home .home-hero .home-hero-info h1 {
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 0;
+  }
+  .home .home-hero .home-hero-info p {
+    font-size: 7px;
+    margin-top: 14px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .home .home-hero {
+    background-image: none;
+    height: 193px;
+    width: 316px;
+    background-color: #587C83;
+    margin: 88px auto 66px auto;
+  }
+  .home .home-hero .home-hero-query {
+    background-image: linear-gradient(rgba(88, 124, 131, 0.3), rgba(88, 124, 131, 0.3)), url(../images/home-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 116px;
+    height: 77;
+    position: relative;
+    top: 23%;
+    left: 15%;
+  }
+  .home .home-hero .home-hero-info {
+    position: static;
+    margin-top: -60px;
+    margin-left: 64%;
+  }
+  .home .home-hero .home-hero-info h1 {
+    font-size: 6px;
+    margin-bottom: 5px;
+  }
+  .home .home-hero .home-hero-info p {
+    font-size: 6px;
+    margin-top: 20px;
+  }
+}
 .home-showcase {
   max-width: 91%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 auto 188px 0;
+  margin: 0 auto 188px auto;
 }
 .home-showcase .showcase-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  max-width: 413px;
 }
 .home-showcase .showcase-card img {
   width: 306px;
+  max-width: 100%;
   height: 491px;
   margin-bottom: 50px;
 }
 .home-showcase .showcase-card p {
   text-align: center;
-  max-width: 413px;
   margin-bottom: 30px;
+  width: 100%;
 }
 .home-showcase .showcase-card h1 {
   font-size: 32px;
@@ -171,6 +327,51 @@ footer .footer-right img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .home-showcase {
+    flex-direction: column;
+  }
+  .home-showcase .showcase-card {
+    margin-bottom: 71px;
+  }
+  .home-showcase .showcase-card img {
+    width: 175px;
+    height: 281px;
+  }
+  .home-showcase .showcase-card p, .home-showcase .showcase-card h1 {
+    font-size: 11px;
+  }
+  .home-showcase .showcase-card button {
+    width: 183px;
+    height: 49px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .home-showcase {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .home-showcase .showcase-card {
+    margin-bottom: 86px;
+  }
+  .home-showcase .showcase-card img {
+    width: 70px;
+    height: 112px;
+    margin-bottom: 15px;
+  }
+  .home-showcase .showcase-card p, .home-showcase .showcase-card h1 {
+    font-size: 6px;
+    width: 167px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .home-showcase .showcase-card button {
+    margin-top: 7px;
+    width: 114px;
+    height: 30px;
+    font-size: 6px;
+  }
+}
 .about .about-card {
   display: flex;
   align-items: center;
@@ -204,6 +405,47 @@ footer .footer-right img {
 }
 .about .about-card .about-card-right p {
   font-weight: bold;
+}
+
+.books {
+  padding: 20px;
+}
+.books .book-section {
+  margin: 180px auto;
+}
+.books .book-section h1 {
+  font-size: 26px;
+  margin-left: 1%;
+  margin-bottom: 65px;
+}
+.books .book-section .book-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.books .book-section .book-row .book {
+  display: flex;
+}
+.books .book-section .book-row .book .bookset-img {
+  width: 223px;
+  height: 246px;
+}
+.books .book-section .book-row .book .book-img {
+  width: 206px;
+  height: 311px;
+}
+.books .book-section .book-row .book .book-right {
+  max-width: 280px;
+  margin-left: 54px;
+}
+.books .book-section .book-row .book .book-right h3 {
+  margin: 48px 0 68px 0;
+}
+.books .book-section .book-row .book .book-right button {
+  width: 222px;
+  height: 68px;
+  border: 1px solid #000;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
