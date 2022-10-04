@@ -171,4 +171,39 @@ footer .footer-right img {
   cursor: pointer;
 }
 
+.about .about-card {
+  display: flex;
+  align-items: center;
+  max-width: 1607px;
+  margin: auto;
+  padding: 0 20px;
+}
+.about .about-card img {
+  width: 393px;
+  height: 587px;
+  margin-top: 213px;
+  margin-bottom: 213px;
+}
+.about .about-card .about-card-right {
+  max-width: 1134px;
+  margin-bottom: 350px;
+  margin-left: 40px;
+}
+.about .about-card .about-card-right h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about .about-card .about-card-right .bottom-title {
+  margin-bottom: 60px;
+}
+.about .about-card .about-card-right h3 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.about .about-card .about-card-right p {
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=styles.css.map */
