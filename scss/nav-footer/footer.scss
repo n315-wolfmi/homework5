@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1920px;
+    height: 92px;
+    background-color: $site-blue;
+    padding: 0 104px;
+
+    .footer-left {
+        color: #fff;
+    }
+
+    .footer-center {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 400px;
+        
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+
+    .footer-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 300px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

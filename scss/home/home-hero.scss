@@ -1,0 +1,32 @@
+.home {
+    max-width: 1920px;
+    height: 100%;
+
+    .home-hero {
+        max-width: 1500px;
+        height: 530px;
+        background-image: linear-gradient(rgb(88,124,131,0.7), rgb(88,124,131,0.7)), url(../images/home-hero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 158px auto 176px auto;
+
+        .home-hero-info {
+            max-width: 265px;
+            position: absolute;
+            right: 350px;
+            top: 470px;
+            color: #fff;
+
+            h1 {
+                font-size: 32px;
+                margin-top: -5px;
+                margin-bottom: 0;
+            }
+            
+            p {
+                margin-top: 20px;
+            }
+        }
+    }
+}
