@@ -3,10 +3,11 @@
 
     .book-section {
         margin: 180px auto;
+        width: 100%;
     
         h1 {
             font-size: 26px;
-            margin-left: 1%;
+            margin-left: 2%;
             margin-bottom: 65px;
         }
     
@@ -14,9 +15,11 @@
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            width: 100%;
         
             .book {
                 display: flex;
+                width: 100%;
             
                 .bookset-img {
                     width: 223px;
@@ -30,6 +33,7 @@
             
                 .book-right {
                     max-width: 280px;
+                    width: 100%;
                     margin-left: 54px;
             
                     h3 {
@@ -44,3 +48,116 @@
         }
     }
 }  
+
+//ipad screen
+@media screen and (max-width: 1528px) {
+    .books {
+        padding: 20px;
+    
+        .book-section {
+            margin: 85px auto;
+        
+            h1 {
+                font-size: 12px;
+                margin-bottom: 30px;
+            }
+        
+            .book-row {
+                flex-direction: column;
+            
+                .book {
+                    width: 50%;
+                    margin-bottom: 63px;
+                
+                    .bookset-img {
+                        width: 111px;
+                        height: 122px;
+                    }
+    
+                    .book-img {
+                        width: 81px;
+                        height: 122px;
+                    }
+                
+                    .book-right {
+                        max-width: 183px;
+                        width: 100%;
+                        margin-left: 27px;
+
+                        p {
+                            font-size: 11px;
+                        }
+                
+                        h3 {
+                            margin: 16px 0;
+                            font-size: 12px
+                        }
+                
+                        button {
+                            width: 126px;
+                            height: 37px;
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+
+//iphone screen
+@media screen and (max-width: $iphone-width) {
+    .books {
+        padding: 20px;
+        margin-top: 50px;
+    
+        .book-section {
+            margin: 0 auto;
+        
+            h1 {
+                font-size: 6px;
+                margin-bottom: 20px;
+            }
+        
+            .book-row {
+                flex-direction: column;
+            
+                .book {
+                    width: 50%;
+                    margin-bottom: 131px;
+                
+                    .bookset-img {
+                        width: 68px;
+                        height: 75px;
+                    }
+    
+                    .book-img {
+                        width: 52px;
+                        height: 79px;
+                    }
+                
+                    .book-right {
+                        max-width: 101px;
+                        width: 100%;
+                        margin-left: 27px;
+
+                        p {
+                            font-size: 6px;
+                        }
+                
+                        h3 {
+                            margin: 11px 0;
+                            font-size: 6px
+                        }
+                
+                        button {
+                            width: 72px;
+                            height: 23px;
+                            font-size: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}

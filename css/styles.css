@@ -470,19 +470,22 @@ footer .footer-right img {
 }
 .books .book-section {
   margin: 180px auto;
+  width: 100%;
 }
 .books .book-section h1 {
   font-size: 26px;
-  margin-left: 1%;
+  margin-left: 2%;
   margin-bottom: 65px;
 }
 .books .book-section .book-row {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  width: 100%;
 }
 .books .book-section .book-row .book {
   display: flex;
+  width: 100%;
 }
 .books .book-section .book-row .book .bookset-img {
   width: 223px;
@@ -494,6 +497,7 @@ footer .footer-right img {
 }
 .books .book-section .book-row .book .book-right {
   max-width: 280px;
+  width: 100%;
   margin-left: 54px;
 }
 .books .book-section .book-row .book .book-right h3 {
@@ -506,6 +510,95 @@ footer .footer-right img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1528px) {
+  .books {
+    padding: 20px;
+  }
+  .books .book-section {
+    margin: 85px auto;
+  }
+  .books .book-section h1 {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .books .book-section .book-row {
+    flex-direction: column;
+  }
+  .books .book-section .book-row .book {
+    width: 50%;
+    margin-bottom: 63px;
+  }
+  .books .book-section .book-row .book .bookset-img {
+    width: 111px;
+    height: 122px;
+  }
+  .books .book-section .book-row .book .book-img {
+    width: 81px;
+    height: 122px;
+  }
+  .books .book-section .book-row .book .book-right {
+    max-width: 183px;
+    width: 100%;
+    margin-left: 27px;
+  }
+  .books .book-section .book-row .book .book-right p {
+    font-size: 11px;
+  }
+  .books .book-section .book-row .book .book-right h3 {
+    margin: 16px 0;
+    font-size: 12px;
+  }
+  .books .book-section .book-row .book .book-right button {
+    width: 126px;
+    height: 37px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .books {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  .books .book-section {
+    margin: 0 auto;
+  }
+  .books .book-section h1 {
+    font-size: 6px;
+    margin-bottom: 20px;
+  }
+  .books .book-section .book-row {
+    flex-direction: column;
+  }
+  .books .book-section .book-row .book {
+    width: 50%;
+    margin-bottom: 131px;
+  }
+  .books .book-section .book-row .book .bookset-img {
+    width: 68px;
+    height: 75px;
+  }
+  .books .book-section .book-row .book .book-img {
+    width: 52px;
+    height: 79px;
+  }
+  .books .book-section .book-row .book .book-right {
+    max-width: 101px;
+    width: 100%;
+    margin-left: 27px;
+  }
+  .books .book-section .book-row .book .book-right p {
+    font-size: 6px;
+  }
+  .books .book-section .book-row .book .book-right h3 {
+    margin: 11px 0;
+    font-size: 6px;
+  }
+  .books .book-section .book-row .book .book-right button {
+    width: 72px;
+    height: 23px;
+    font-size: 6px;
+  }
+}
 .blog {
   height: 100%;
 }
