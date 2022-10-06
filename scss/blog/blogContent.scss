@@ -1,0 +1,61 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1200px;
+    margin: 90px auto 10px auto;
+
+    .boxOne{
+        height: 500px;
+
+        img{
+            width: 250px;
+            height: 400px;
+        }
+
+        .title{
+            font-family: BoldSegoeUI;
+            font-size: 16px;
+            position: relative;
+            left: 300px;
+            top: -400px;
+        }
+
+        p{
+            font-family: RegSegoeUI;
+            position: relative;
+            max-width: 900px;
+            white-space: pre-line;
+            left: 300px;
+            top: -380px;
+        }
+    }
+
+    .boxTwo{
+
+        img{
+            width: 250px;
+            height: 400px;
+        }
+
+        .title{
+            font-family: BoldSegoeUI;
+            font-size: 16px;
+            position: relative;
+            left: 300px;
+            top: -400px;
+        }
+
+        p{
+            font-family: RegSegoeUI;
+            position: relative;
+            max-width: 900px;
+            white-space: pre-line;
+            left: 300px;
+            top: -380px;
+        }
+    }
+
+    
+}
+ 

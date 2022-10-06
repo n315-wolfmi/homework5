@@ -2,6 +2,10 @@
   font-family: RegularSegoeUI;
   src: url(fonts/segoeui.ttf);
 }
+@font-face {
+  font-family: BoldSegoeUI;
+  src: url(../css/fonts/segoeuib.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -500,6 +504,202 @@ footer .footer-right img {
   height: 68px;
   border: 1px solid #000;
   cursor: pointer;
+}
+
+.blog {
+  height: 100%;
+}
+.blog .hero {
+  max-width: 1200px;
+  height: 423px;
+  background-image: linear-gradient(to bottom, rgba(88, 124, 131, 0.8), rgba(88, 124, 131, 0.8)), url(../../images/february-favorites-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 130px auto 0px auto;
+}
+.blog .hero .blog_hero_Info {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: BoldSegoeUI;
+}
+.blog .hero .blog_hero_Info h4 {
+  font-size: 32px;
+  color: white;
+  padding-top: 120px;
+}
+.blog .hero .blog_hero_Info h5 {
+  font-size: 26px;
+  padding-top: 30px;
+}
+.blog .hero .blog_hero_Info p {
+  padding-top: 30px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1200px;
+  margin: 90px auto 10px auto;
+}
+.flex-container .boxOne {
+  height: 500px;
+}
+.flex-container .boxOne img {
+  width: 250px;
+  height: 400px;
+}
+.flex-container .boxOne .title {
+  font-family: BoldSegoeUI;
+  font-size: 16px;
+  position: relative;
+  left: 300px;
+  top: -400px;
+}
+.flex-container .boxOne p {
+  font-family: RegSegoeUI;
+  position: relative;
+  max-width: 900px;
+  white-space: pre-line;
+  left: 300px;
+  top: -380px;
+}
+.flex-container .boxTwo img {
+  width: 250px;
+  height: 400px;
+}
+.flex-container .boxTwo .title {
+  font-family: BoldSegoeUI;
+  font-size: 16px;
+  position: relative;
+  left: 300px;
+  top: -400px;
+}
+.flex-container .boxTwo p {
+  font-family: RegSegoeUI;
+  position: relative;
+  max-width: 900px;
+  white-space: pre-line;
+  left: 300px;
+  top: -380px;
+}
+
+.bookclub {
+  height: 100%;
+}
+.bookclub .hero {
+  max-width: 1200px;
+  height: 423px;
+  background-image: linear-gradient(to bottom, rgba(88, 124, 131, 0.8), rgba(88, 124, 131, 0.8)), url(../../images/book-club-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 130px auto 0px auto;
+}
+.bookclub .hero .bookclub_hero_Info {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: BoldSegoeUI;
+}
+.bookclub .hero .bookclub_hero_Info h4 {
+  font-size: 32px;
+  color: white;
+  padding-top: 120px;
+}
+.bookclub .hero .bookclub_hero_Info h5 {
+  font-size: 26px;
+  padding-top: 30px;
+}
+
+.bookclub_flex_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1200px;
+  margin: 90px auto 10px auto;
+}
+.bookclub_flex_container .bookclub_boxOne {
+  width: 500px;
+  height: 400px;
+}
+.bookclub_flex_container .bookclub_boxOne img {
+  width: 500px;
+  height: 400px;
+}
+.bookclub_flex_container .bookclub_boxTwo {
+  height: 800px;
+}
+.bookclub_flex_container .bookclub_boxTwo .detail {
+  font-family: RegSegoeUI;
+  position: relative;
+  white-space: pre-line;
+  max-width: 750px;
+  left: 550px;
+  top: -400px;
+}
+
+.ebook_flex_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1200px;
+  margin: 90px auto 10px auto;
+}
+.ebook_flex_container .ebook_boxOne {
+  width: 500px;
+  height: 400px;
+}
+.ebook_flex_container .ebook_boxOne img {
+  width: 500px;
+  height: 400px;
+}
+.ebook_flex_container .ebook_boxTwo {
+  height: 800px;
+}
+.ebook_flex_container .ebook_boxTwo .detail {
+  font-family: RegSegoeUI;
+  position: relative;
+  white-space: pre-line;
+  max-width: 750px;
+  left: 550px;
+  top: -400px;
+}
+
+.ebook {
+  height: 100%;
+}
+.ebook .hero {
+  max-width: 1200px;
+  height: 423px;
+  background-image: linear-gradient(to bottom, rgba(88, 124, 131, 0.8), rgba(88, 124, 131, 0.8)), url(../../images/eread-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 130px auto 0px auto;
+}
+.ebook .hero .ebook_hero_Info {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: BoldSegoeUI;
+}
+.ebook .hero .ebook_hero_Info h4 {
+  font-size: 32px;
+  color: white;
+  padding-top: 120px;
+}
+.ebook .hero .ebook_hero_Info h5 {
+  font-size: 26px;
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=styles.css.map */

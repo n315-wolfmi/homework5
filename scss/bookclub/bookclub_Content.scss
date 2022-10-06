@@ -1,0 +1,29 @@
+.bookclub_flex_container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1200px;
+    margin: 90px auto 10px auto;
+
+    .bookclub_boxOne{
+        width: 500px;
+        height: 400px;
+
+        img{
+            width: 500px;
+            height: 400px;
+        }
+    }
+    .bookclub_boxTwo{
+        height: 800px;
+
+        .detail{
+            font-family: RegSegoeUI;
+            position: relative;
+            white-space: pre-line;
+            max-width: 750px;
+            left: 550px;
+            top: -400px;
+        }
+    }
+}
