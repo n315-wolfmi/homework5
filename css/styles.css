@@ -795,4 +795,76 @@ footer .footer-right img {
   padding-top: 30px;
 }
 
+.account {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.account input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: medium;
+  display: block;
+  border-bottom: 2px solid black;
+  margin-bottom: 35px;
+}
+.account .flex-container_account {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  max-width: 1200px;
+  margin: 200px auto;
+}
+.account .flex-container_account .boxOne_account, .account .flex-container_account .boxTwo_account {
+  position: relative;
+  left: 300px;
+}
+.account .flex-container_account .boxOne_account {
+  position: relative;
+  top: 10px;
+  width: 500px;
+  height: 500px;
+}
+.account .flex-container_account .boxOne_account .title {
+  font-size: 26px;
+  font-family: RegSegoeUI;
+  padding-bottom: 30px;
+}
+.account .flex-container_account .boxOne_account .logBtn {
+  background-color: #587C83;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: 50px;
+  width: 120px;
+  height: 35px;
+}
+.account .flex-container_account .boxTwo_account {
+  top: -35px;
+  width: 500px;
+  height: 500px;
+}
+.account .flex-container_account .boxTwo_account .title {
+  font-size: 26px;
+  font-family: RegSegoeUI;
+  padding-bottom: 10px;
+}
+.account .flex-container_account .boxTwo_account .subtext {
+  font-family: RegSegoeUI;
+  position: relative;
+  bottom: -15px;
+}
+.account .flex-container_account .boxTwo_account .signBtn {
+  background-color: #587C83;
+  border: 1px solid black;
+  text-align: center;
+  color: white;
+  position: relative;
+  left: 60px;
+  width: 120px;
+  height: 35px;
+}
+
 /*# sourceMappingURL=styles.css.map */
