@@ -21,6 +21,48 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 16px;
 }
 
+#alertSystem {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  flex-direction: column;
+}
+#alertSystem .loginAlert {
+  text-align: center;
+  width: 250px;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+#alertSystem .loginAlert h2 {
+  margin-bottom: 30px;
+}
+#alertSystem .loginAlert a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #587C83;
+}
+#alertSystem .loginAlert button {
+  background-color: rgb(208, 67, 67);
+  border: 1px solid #000;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
 nav {
   height: 108px;
   max-width: 1920px;
@@ -968,7 +1010,7 @@ footer .footer-right img {
   font-family: RegSegoeUI;
   padding-bottom: 30px;
 }
-.account .flex-container_account .boxOne_account .logBtn {
+.account .flex-container_account .boxOne_account #logBtn {
   background-color: #587C83;
   border: 1px solid black;
   text-align: center;
@@ -977,6 +1019,7 @@ footer .footer-right img {
   left: 50px;
   width: 120px;
   height: 35px;
+  cursor: pointer;
 }
 .account .flex-container_account .boxTwo_account {
   top: -35px;
@@ -993,7 +1036,7 @@ footer .footer-right img {
   position: relative;
   bottom: -15px;
 }
-.account .flex-container_account .boxTwo_account .signBtn {
+.account .flex-container_account .boxTwo_account #signBtn {
   background-color: #587C83;
   border: 1px solid black;
   text-align: center;
@@ -1002,6 +1045,7 @@ footer .footer-right img {
   left: 60px;
   width: 120px;
   height: 35px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

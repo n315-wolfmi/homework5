@@ -38,7 +38,7 @@
                 padding-bottom: 30px;
             }
 
-            .logBtn{
+            #logBtn{
                 background-color: $site-blue;
                 border: 1px solid black;
                 text-align: center;
@@ -47,6 +47,7 @@
                 left: 50px;
                 width: 120px;
                 height: 35px;
+                cursor: pointer;
             }
         }
 
@@ -67,7 +68,7 @@
                 bottom: -15px;
             }
 
-            .signBtn{
+            #signBtn{
                 background-color: $site-blue;
                 border: 1px solid black;
                 text-align: center;
@@ -76,6 +77,7 @@
                 left: 60px;
                 width: 120px;
                 height: 35px;
+                cursor: pointer;
             }
         }
 
