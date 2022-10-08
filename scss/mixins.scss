@@ -1,6 +1,6 @@
-@mixin site-button() {
-    width: 222px;
-    height: 68px;
+@mixin site-button($width:222px, $height:68px) {
+    width: $width;
+    height: $height;
     border: 1px solid #000;
     cursor: pointer;
 }
